@@ -28,7 +28,7 @@ a{
 .container-navbar-side{
     background-color: rgb(13, 13, 13);
     width: 250px;
-    height: calc(100vh - 130px);
+    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -161,8 +161,6 @@ a{
 .nav-second-part{
     width: calc(100% - 20px);
     padding-left: 20px;
-    position: sticky;
-    bottom: 0;
 }
 
 /* regole installa app */
@@ -228,7 +226,7 @@ a{
 .container-main-content{
     overflow-y: auto;
     width: calc(100vw - 250px);
-    height: calc(100vh - 130px);
+    height: calc(100vh - 100px);
 
 }
 
@@ -239,5 +237,42 @@ a{
 /* regole player */
 .row-player{
     background-color: rgb(59, 59, 59);
-    height: 130px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* regole colonna sinistra */
+.col-sx{
+    display: flex;
+    align-items: center;
+}
+
+.container-info-brano{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    width: calc(100% / 3);
+}
+
+.container-info-brano img{
+    width: 30%;
+    margin-right: 15px;
+}
+
+#brano-nome{
+    font-size: 12px;
+}
+
+#sinister{
+    color: white;
+    font-size: 14px;
+}
+
+.container-folder-follow{
+    margin-left: 20px;
+}
+
+.fa-folder{
+    padding-right: 27px;
 }
