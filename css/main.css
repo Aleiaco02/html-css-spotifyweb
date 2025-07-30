@@ -18,6 +18,7 @@ a{
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+/* regole container generale */
 
 /* regole hover navbar */
 .container-navbar-side :hover{
@@ -239,13 +240,14 @@ a{
     background-color: rgb(59, 59, 59);
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 /* regole colonna sinistra */
 .col-sx{
     display: flex;
     align-items: center;
+    width: calc(100% / 3);
 }
 
 .container-info-brano{
@@ -262,6 +264,7 @@ a{
 
 #brano-nome{
     font-size: 12px;
+    display: block;
 }
 
 #sinister{
@@ -275,4 +278,77 @@ a{
 
 .fa-folder{
     padding-right: 27px;
+}
+
+/* regole parte controllo musica */
+.col-middle{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 3) + 100px);
+}
+
+.container-barra{
+    display: flex;
+    align-items: center;
+}
+
+.durata{
+    color: white;
+    font-size: 12px;
+}
+
+.riga-grande{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(117, 117, 117);
+    align-self: center;
+    border-radius: 22px;
+    margin: 20px;
+}
+
+.container-controllo-musica{
+    align-self: center;
+}
+
+.controllo-musica{
+    padding: 0 10px;
+    color: white;
+}
+
+.fa-play{
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    border: 3px solid white;
+    border-radius: 50%;
+    font-size: 23.5px;
+}
+
+/* regole parte tasti player */
+.col-dx{
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+}
+
+.container-tasti-player{
+    display: flex;
+    width: 23vw;
+    margin-right: 10px;
+        
+
+}
+
+.container-tasti-player a{
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.riga-grande-2{
+    width: 100%;
+    background-color: rgb(117, 117, 117);
+    height: 5px;
+    align-self: center;
+    border-radius: 22px;
+
 }
