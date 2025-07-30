@@ -210,15 +210,29 @@ a{
 
 /* regole barra upgrade */
 .container-upgrade{
-    background-color: rgb(59, 59, 59);
-    opacity: 0.7;
+    background-color: rgba(8, 10, 14, 0.645);
     width: calc(100vw - 250px);
     height: 100px;
     position: fixed;
     top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.bottone-upgrade span{
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    border-radius: 23px;
+    padding: 10px 40px;
+    margin-right: 13px;
+}
+
+.bottone-upgrade:hover{
+    transform: scale(1.1);
+}
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
@@ -228,8 +242,26 @@ a{
     overflow-y: auto;
     width: calc(100vw - 250px);
     height: calc(100vh - 100px);
-
+    background-color: rgb(20 25 34);
 }
+
+/* regole sezione  */
+.sezione-contenuto{
+    margin-top: 120px;
+}
+
+.sezione-contenuto ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 22px;
+    font-size: 15px;
+}
+
+.sezione-contenuto a:hover{
+    color: white;
+}
+
 
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -237,7 +269,7 @@ a{
 
 /* regole player */
 .row-player{
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(43 43 43);
     height: 100px;
     display: flex;
     align-items: center;
@@ -342,6 +374,7 @@ a{
 .container-tasti-player a{
     margin: 0 10px;
     font-size: 14px;
+    color: white;
 }
 
 .riga-grande-2{
@@ -351,4 +384,9 @@ a{
     align-self: center;
     border-radius: 22px;
 
+}
+
+/* regole hover player */
+.col-sx a:hover{
+    color: white;
 }
