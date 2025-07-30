@@ -3,10 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Spotify</title>
 </head>
 <body>
-    
+
+    <!-- container due righe macro pagina<-->
+    <section class="container">
+
+
+        <!-- prima riga macro contenuto-->
+        <div class="row-content">
+
+
+            <!-- parte navbar laterale -->
+            <aside class="container-navbar-side">
+
+                <!-- creazione div che contiene logo,tasti e playlist -->
+                <div class="nav-first-part">
+                    <div class="container-logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </div>
+                    <div class="container-tasti-navbar">
+                        <a href="#"><img src="img/home.svg" alt="home" class="home-img"></a>
+                        <a href="#"><span class="home-text">Home</span></a>
+                    </div>
+                    <div class="container-tasti-navbar-2">
+                        <a href="#"><img src="img/search.svg" alt="search"></a>
+                        <a href="#">Cerca</a>
+                    </div>
+                    <div class="container-tasti-navbar-2">
+                        <a href="#"><img src="img/libreria.svg" alt="library"></a>
+                        <a href="#">La tua libreria</a>
+                    </div>
+                    <h3>PLAYLIST</h3>
+                    <div class="container-crea-playlist">
+                        <a href="#"><span class="add">+</span></a>
+                        <a href="#"><span class="add-text">Crea Playlist</span></a>
+                    </div>
+                    <ul class="lista-playlist">
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- creazione div che contiene installa e account -->
+                <div class="nav-second-part">
+                    <div class="container-installa-app">
+                        <a href="#"><img src="img/download.svg" alt="download"></a>
+                        <a href="#"> Installa app</a>
+                    </div>
+                    
+                    <div class="container-profilo">
+                        <a href="#"><img src="img/profile.svg" alt="profilo"></a>
+                        <a href="#" class="home-text"> <strong>Jhon Doe</strong></a>
+                    </div>
+
+                </div>
+            </aside>
+
+            <!-- contenuto principale e barra effettua upgrade trasparente -->
+            <div>
+
+            <!-- parte effetua upgrade -->
+            <div class="container-upgrade">
+            </div>
+
+            <!-- parte contenuto principale -->
+            <div class="container-main-content">
+            </div>
+            </div>
+        </div>
+
+
+        <!-- seconda riga macro player-->
+        <div class="row-player">
+        </div>
+    </section>
 </body>
 </html>

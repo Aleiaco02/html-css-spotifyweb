@@ -3,4 +3,241 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row-content{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* regole hover navbar */
+.container-navbar-side :hover{
+    color: white;
+}
+
+/* regole navbar */
+.container-navbar-side{
+    background-color: rgb(13, 13, 13);
+    width: 250px;
+    height: calc(100vh - 130px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* regole prima parte navbar */
+
+/* regole logo */
+.container-logo{
+    width: 70%;
+}
+
+.container-logo img{
+    width: 100%;
+    margin: 20px 0px 30px 20px;
+}
+
+/* regole tasti */
+.container-tasti-navbar{
+    width: 100%;
+    display: flex;
+}
+
+.container-tasti-navbar-2{
+    width: 100%;
+    display: flex;
+    margin-left: 4px;
+}
+
+.container-tasti-navbar img{
+    width: 100%;
+    padding-left: 16px;
+    margin-bottom: 5px;
+}
+
+.container-tasti-navbar-2 img{
+    width: 100%;
+    padding-left: 16px;
+    margin-bottom: 5px;
+}
+
+.container-tasti-navbar a:first-of-type{
+    width: 22%;
+    text-decoration: none;
+}
+
+.container-tasti-navbar-2 a:first-of-type{
+    width: 22%;
+    text-decoration: none;
+}
+
+.container-tasti-navbar a:last-of-type{
+    width: 80%;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.container-tasti-navbar-2 a:last-of-type{
+    width: 80%;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.home-img{
+    border-left: 4px solid greenyellow;
+}
+
+.home-text{
+    color: white;
+    margin-left: 3.5px;
+}
+
+/* regole titolo playlist */
+.nav-first-part h3{
+    color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* regole tasto crea playlist */
+.container-crea-playlist{
+    display: flex;
+    align-items: center;
+}
+
+.add{
+    background-color: rgb(117, 117, 117);
+    color: black;
+    padding: 0px 12px;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.add-text{
+    color: rgb(117, 117, 117);
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* hover add playlist */
+.add:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* regole ul lista playlist */
+.lista-playlist{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-left: 20px;
+    overflow: auto;
+    height:25vh;
+    flex-shrink: 1;
+}
+
+.lista-playlist li{
+    padding-top: 20px;    
+}
+  
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* regole seconda parte navbar */
+.nav-second-part{
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+/* regole installa app */
+.container-installa-app{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(117, 117, 117);
+    padding-bottom: 10px;
+}
+
+.container-installa-app a:first-of-type{
+    width: 8%;
+    margin-top: 5px;
+}
+
+.container-installa-app a:last-of-type{
+    width: 80%;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+/* regole profilo */
+.container-profilo{
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: 8px;
+}
+
+.container-profilo a:first-of-type{
+    width: 12%;
+    background-color: rgb(117, 117, 117);
+    border-radius: 50%;
+    padding: 0 3px;
+}
+
+.container-profilo a:last-of-type{
+    width: 80%;
+    margin-left: 8px;
+    font-size: 16px;
+    
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* regole barra upgrade */
+.container-upgrade{
+    background-color: rgb(59, 59, 59);
+    opacity: 0.7;
+    width: calc(100vw - 250px);
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* regole container main */
+.container-main-content{
+    overflow-y: auto;
+    width: calc(100vw - 250px);
+    height: calc(100vh - 130px);
+
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* regole player */
+.row-player{
+    background-color: rgb(59, 59, 59);
+    height: 130px;
 }
