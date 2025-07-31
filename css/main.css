@@ -331,7 +331,7 @@ a{
 
 .card{
     text-align: center;
-    width: calc((100% / 6) - (15px / 6));
+    width: calc((100% / 6) - 15px);
     margin-bottom: 50px;
     position: relative;
 }
@@ -558,5 +558,51 @@ a{
     
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx *//* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
+/* regole tablet */
+@media screen and (max-width: 878px){
+    .container-navbar-side{
+        width: 240px;
+    }
 
+    .add-text{
+        margin-left: 0;
+    }
+
+    .sezione-contenuto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sezione-contenuto ul{
+        gap: 16px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .row-card{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width:calc((100% / 4) - 15px);
+        margin-bottom: 0;
+    }
+
+    .titolo-riga-2{
+        margin-top: 40px;
+    }
+
+    .col-sx{
+        width: 20%;
+    }
+
+    .container-immagine-player {
+        width: 32%;
+    }
+
+    .in-riproduzione-info span {
+        white-space: normal;
+    }
+}
