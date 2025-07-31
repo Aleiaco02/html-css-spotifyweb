@@ -431,9 +431,19 @@ a{
 .fa-heart, .fa-folder{
     color: rgb(117, 117, 117);
     margin-left: 1vw;
+    font-size: 18px;
+    padding: 3px 0;
 }
 
-/* regole parte controllo musica */
+.fa-folder:hover{
+    color: white;
+}
+
+.fa-heart:hover{
+    color: white;
+}
+
+/* regole parte colonna centrale */
 .col-middle{
     display: flex;
     flex-direction: column;
@@ -502,10 +512,8 @@ a{
     transform: scale(1.3);
 }
 
-/* regole parte tasti player */
-.col-dx{
-    
-}
+/* regole parte colonna destra */
+
 
 .container-tasti-player{
     display: flex;
@@ -552,7 +560,3 @@ a{
 
 
 
-/* regole hover player */
-.col-sx a:hover{
-    color: white;
-}
