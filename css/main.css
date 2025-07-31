@@ -254,7 +254,7 @@ a{
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 22px;
+    gap: 25px;
     font-size: 15px;
 }
 
@@ -276,6 +276,46 @@ a{
     flex-direction: column;
 }
 
+/* regole hover contenuto principale */
+.card:hover .overlay{
+    display: flex;
+}
+
+.card:hover .overlay-tondo{
+    display: flex;
+}
+
+.card-img{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.overlay-tondo{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border-radius: 50%;
+}
+
 /* regole prima row contenuto principale */
 .titolo-riga{
     color: white;
@@ -283,7 +323,7 @@ a{
     font-size: 28px;
 }
 
-.first-row-content{
+.row-card{
     display: flex;
     margin: 20px;
     gap: 15px;
@@ -291,24 +331,48 @@ a{
 
 .card{
     text-align: center;
-    width: calc((100% / 6) - (15 / 6));
+    width: calc((100% / 6) - (15px / 6));
+    margin-bottom: 50px;
+    position: relative;
 }
+
 
 .card h3{
     color: white;
     margin-top: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
 .card span{
     color: rgb(117, 117, 117);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .card img{
     width: 100%;
 }
 
+/* regole seconda row contenuto principale */
+.piu-ascolti{
+    color: rgb(117, 117, 117);
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.titolo-riga-2{
+    color: white;
+    margin: 0px 0px 10px 20px;
+    font-size: 28px;
+}
+
+
+/* regole terza row contenuto principale */
+
+.circle img{
+    border-radius: 50%;
+}
 
 
 
@@ -321,55 +385,68 @@ a{
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 /* regole colonna sinistra */
 .col-sx{
+    width: 15%;
+}
+
+.container-immagine-player{
+    width: 60px;
+    margin-left: 10px;
     display: flex;
-    align-items: center;
-    width: calc(100% / 3);
 }
 
-.container-info-brano{
-    display: flex;
-    align-items: center;
-    margin-left: 16px;
-    width: calc(100% / 3);
+.container-immagine-player img{
+    width: 100%;
 }
 
-.container-info-brano img{
-    width: 30%;
-    margin-right: 15px;
+.in-riproduzione-info :hover{
+    color: white;
 }
 
-#brano-nome{
-    font-size: 12px;
-    display: block;
+.in-riproduzione-info{
+    align-self: center;
+    margin-left: 0.5vw;
+
 }
 
-#sinister{
+.in-riproduzione-info h5{
     color: white;
     font-size: 14px;
 }
 
-.container-folder-follow{
-    margin-left: 20px;
+.in-riproduzione-info span{
+    color: rgb(117, 117, 117);
+    font-size: 12px;
+    white-space: nowrap;
 }
 
-.fa-folder{
-    padding-right: 27px;
+.like-salva{
+    align-self: center;
+}
+
+.fa-heart, .fa-folder{
+    color: rgb(117, 117, 117);
+    margin-left: 1vw;
 }
 
 /* regole parte controllo musica */
 .col-middle{
     display: flex;
     flex-direction: column;
-    width: calc((100% / 3) + 100px);
+    width: calc((100% / 2.3));
 }
 
 .container-barra{
     display: flex;
     align-items: center;
+}
+
+.container-barra-brano{
+    width: 100%;
 }
 
 .durata{
@@ -378,12 +455,33 @@ a{
 }
 
 .riga-grande{
-    width: 100%;
-    height: 5px;
     background-color: rgb(117, 117, 117);
-    align-self: center;
     border-radius: 22px;
-    margin: 20px;
+    margin: 17px;
+}
+
+.riga-piccola{
+    width: 20%;
+    border-radius: 22px;
+    background-color: white;
+    height: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.punto{
+    color: white;
+    font-size: 15px;
+    padding-left: 90%;
+    opacity: 0;
+}
+
+.riga-grande:hover .punto{
+    opacity: 1;
+}
+
+.riga-grande:hover .riga-piccola{
+    background-color: yellowgreen;
 }
 
 .container-controllo-musica{
@@ -393,46 +491,66 @@ a{
 .controllo-musica{
     padding: 0 10px;
     color: white;
+    font-size: 20px;
 }
 
-.fa-play{
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
-    border: 3px solid white;
-    border-radius: 50%;
-    font-size: 23.5px;
+.play-music{
+    font-size: 10px;
+}
+
+.play-music :hover{
+    transform: scale(1.3);
 }
 
 /* regole parte tasti player */
 .col-dx{
-    display: flex;
-    justify-content: flex-end;
-    width: 33%;
+    
 }
 
 .container-tasti-player{
     display: flex;
-    width: 17vw;
     margin-right: 10px;
         
 
 }
 
 .container-tasti-player a{
-    margin: 0 10px;
+    margin-right: 5px;
     font-size: 14px;
     color: white;
 }
 
+.container-volume{
+    display: flex;
+}
+
 .riga-grande-2{
-    width: 100%;
     background-color: rgb(117, 117, 117);
     height: 5px;
     align-self: center;
     border-radius: 22px;
-
+    width: 150px;
 }
+
+.riga-piccola-2{
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.riga-grande-2:hover .punto{
+    opacity: 1;
+}
+
+.riga-grande-2:hover .riga-piccola-2{
+    background-color: yellowgreen;
+    
+}
+
+
 
 /* regole hover player */
 .col-sx a:hover{
