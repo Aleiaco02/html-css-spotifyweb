@@ -447,7 +447,7 @@ a{
 .col-middle{
     display: flex;
     flex-direction: column;
-    width: calc((100% / 2.3));
+    width:46%;
 }
 
 .container-barra{
@@ -598,11 +598,37 @@ a{
         width: 20%;
     }
 
+    .col-middle{
+        width: 40%;
+    }
+
     .container-immagine-player {
         width: 32%;
     }
 
+    .container-immagine-player img {
+        height: 41px;
+    }
+
     .in-riproduzione-info span {
         white-space: normal;
+        font-size: 11px;
     }
+
+    .in-riproduzione-info h5 {
+        font-size: 12px;
+    }
+
+    .in-riproduzione-info {
+        line-height: 0.9;
+    }
+
+    .riga-grande-2{
+        width: 120px;
+    }
+}
+
+/* regole smartphone */
+@media screen and (max-width: 639px){
+    
 }
