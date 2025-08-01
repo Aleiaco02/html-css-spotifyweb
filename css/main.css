@@ -42,9 +42,14 @@ a{
     width: 70%;
 }
 
-.container-logo img{
+.container-logo img:first-of-type{
     width: 100%;
     margin: 20px 0px 30px 20px;
+}
+
+.container-logo img:last-of-type{
+    width: 100%;
+    display: none;
 }
 
 /* regole tasti */
@@ -541,7 +546,7 @@ a{
 }
 
 .riga-piccola-2{
-    width: 30px;
+    width: 30%;
     height: 5px;
     background-color: white;
     border-radius: 22px;
@@ -645,5 +650,161 @@ a{
 
     .fa-3x{
         font-size: 25px;
+    }
+
+    .col-sx{
+        width: 21%;
+    }
+}
+
+@media screen and (max-width: 552px){
+    .container-navbar-side{
+        width: 60px;
+    }
+
+    .container-upgrade{
+        width: calc(100vw - 60px);
+    }
+
+    .container-main-content{
+        width: calc(100vw - 60px);
+    }
+
+    .container-logo img:first-of-type{
+        display: none;
+    }
+
+    .container-logo img:last-of-type{
+        display: block;
+        width: 75%;
+    }
+
+    .container-logo {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 1.5px;
+        margin-bottom: 12px;
+    }
+
+    .container-tasti-navbar{
+        margin-left: 2px;
+        margin-bottom: 3px;
+        margin-top: 20px;
+    }
+
+    .container-tasti-navbar a:first-of-type{
+        width: 100%;
+    }
+
+    .container-tasti-navbar img{
+        padding: 0;
+        width: 36px;
+    }
+
+    .container-tasti-navbar-2 a:first-of-type{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container-tasti-navbar-2 img{
+        padding-left: 0px;
+        width: 36px;
+    }
+
+    .home-img{
+        border: none;
+    }
+
+    .nav-first-part{
+        margin-left: 9px;
+    }
+    .nav-first-part ul{
+        display: none;
+    }
+
+    .nav-first-part h3{
+        display: none;
+    }
+
+    .home-text{
+        display: none;
+    }
+
+    .container-tasti-navbar-2 a:last-of-type{
+        display: none;
+    }
+    .container-crea-playlist{
+        display: none;
+    }
+
+    .container-installa-app a:last-of-type{
+        display: none;
+    }
+
+    .container-installa-app{
+        border: none;
+        display: block;
+        padding: 0;
+        margin-right: 4px;
+    }
+
+    .container-installa-app img{
+        width: 20px;
+    }
+
+    .nav-second-part{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-profilo{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .container-profilo a:first-of-type {
+        padding: 2px 5px;
+        display: block;
+        width: 34px;
+    }
+
+    .col-sx{
+        width: 23%;
+    }
+
+    .riga-grande-2{
+        width: 80px;
+    }
+
+    .container-tasti-player a{
+        font-size: 12px;
+    }
+
+    .in-riproduzione-info{
+        margin-bottom: 5px;
+    }
+
+    .container-immagine-player img {
+        margin-top: 4px;
+        height: 40px;
+    }
+
+    .like-salva{
+        margin-bottom: 8px;
+    }
+
+    .controllo-musica{
+        font-size: 14px;
+    }
+
+    .fa-3x{
+        font-size: 23px;
+    }
+
+    .riga-grande{
+        margin: 14px 7px;
     }
 }
