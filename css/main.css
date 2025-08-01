@@ -624,11 +624,26 @@ a{
     }
 
     .riga-grande-2{
-        width: 120px;
+        width: 110px;
     }
 }
 
 /* regole smartphone */
 @media screen and (max-width: 639px){
-    
+    .card{
+        width:calc((100% / 2) - 15px);
+    }
+
+    .riga-grande-2{
+        width: 100px;
+    }
+
+    .controllo-musica{
+        padding: 0 5px;
+        font-size: 17px;
+    }
+
+    .fa-3x{
+        font-size: 25px;
+    }
 }
